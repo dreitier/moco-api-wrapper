@@ -1,0 +1,36 @@
+{
+  "name": "dreitier/moco-api-wrapper",
+  "description": "API wrapper for MOCO - an agency software",
+  "keywords": [
+    "moco",
+    "api",
+    "hundertzehn",
+    "agency"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christopher Klein",
+      "email": "ckl@dreitier.com"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+	"nesbot/carbon": ">=2.50.0",
+    "illuminate/http": ">=9.0",
+    "illuminate/support": ">=9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dreitier\\Moco\\": "src/Moco",
+      "Dreitier\\Temporal\\": "src/Temporal"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Dreitier\\Moco\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
